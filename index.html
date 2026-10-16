@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Frisca â€” Visual Creator Portfolio</title>
+<title>Frisca — Visual Creator Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Syne:wght@700;800&family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -393,6 +393,22 @@
         box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
         line-height: 1;
     }
+    .film-caption {
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        background: #f3e700;
+        color: #26171f;
+        border: 2px solid #26171f;
+        border-radius: 9999px;
+        padding: 6px 14px;
+        box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+        line-height: 1;
+        margin-top: 12px;
+        display: inline-block;
+    }
     .gsm-img {
         cursor: zoom-in;
         transition: opacity 0.2s;
@@ -476,7 +492,7 @@
         justify-content: center;
         align-items: center;
     }
-    .film-slide.active { display: flex; }
+    .film-slide.active { display: flex; flex-direction: column; align-items: center; gap: 4px; }
     .film-slide .modal-image {
         margin: 0 auto;
         object-position: center center;
@@ -550,11 +566,11 @@
         box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
         line-height: 1;
     }
-    .works-popup-img, .works-popup-trigger {
+    .works-popup-img, .works-popup-trigger, .sketch-img {
         cursor: zoom-in;
         transition: opacity 0.2s;
     }
-    .works-popup-img:hover, .works-popup-trigger:hover {
+    .works-popup-img:hover, .works-popup-trigger:hover, .sketch-img:hover {
         opacity: 0.9;
     }
     .poster-series-img {
@@ -642,7 +658,7 @@
         transition: transform 0.1s linear;
     }
 
-    /* ===== Scroll Reveal â€” Retro Pop ===== */
+    /* ===== Scroll Reveal — Retro Pop ===== */
     .reveal {
         opacity: 0;
         transform: translateY(32px) rotate(-1deg) scale(0.98);
@@ -689,7 +705,7 @@
         opacity: 1;
         transform: translateY(0) scale(1) rotate(0);
     }
-    /* stagger delays via --d — hanya saat masuk, keluar langsung halus */
+    /* stagger delays via --d � hanya saat masuk, keluar langsung halus */
     .reveal[data-delay], .reveal-left[data-delay], .reveal-right[data-delay], .reveal-scale[data-delay], .reveal-pop[data-delay] {
         transition-delay: var(--d, 0s);
     }
@@ -789,7 +805,7 @@
     }
 
     /* ============================================================
-       EXTRA HOVER ANIMATIONS â€” Retro Pop (lebih menarik)
+       EXTRA HOVER ANIMATIONS — Retro Pop (lebih menarik)
        ============================================================ */
 
     /* 1) Shine sweep */
@@ -1024,7 +1040,7 @@
         40% { filter: brightness(1.35) saturate(1.3); }
         100% { filter: brightness(1); }
     }
-    /* badge persen — hidden sampai diklik */
+    /* badge persen � hidden sampai diklik */
     .skill-badge {
         display: inline-block;
         opacity: 0;
@@ -1279,7 +1295,7 @@
             </h1>
             <p class="font-body-md text-body-md text-on-surface-variant max-w-xl text-lg leading-relaxed border-l-4 border-border-accent pl-md">
                 DKV Student, Design Ilustrator, and Creative Media.<br>
-                <span class="italic font-semibold text-primary">â€œIdeas in Motion, Creativity in Every Frameâ€</span><br>
+                <span class="italic font-semibold text-primary">"Ideas in Motion, Creativity in Every Frame"</span><br>
                 <span class="text-sm opacity-80">Ide yang bergerak, kreativitas di setiap frame.</span>
             </p>
             <div class="flex flex-wrap gap-md mt-md">
@@ -1355,7 +1371,7 @@
                 HELLO!
             </h2>
             <h3 class="font-headline-md text-headline-md text-on-surface mb-xl max-w-2xl bg-surface p-sm border-2 border-on-surface inline-block rotate-[1deg] hard-shadow-primary">
-                I'm Frisca â€” a DKV student and visual creator.
+                I'm Frisca � a DKV student and visual creator.
             </h3>
             <div class="relative bg-surface-variant p-lg border-2 border-on-surface rounded-xl hard-shadow-black max-w-2xl mb-2xl rotate-[-1deg]">
                 <div class="absolute top-0 right-0 w-8 h-8 bg-background border-b-2 border-l-2 border-on-surface rounded-bl-lg"></div>
@@ -1367,6 +1383,16 @@
                 <span class="font-montserrat text-on-surface uppercase tracking-tight font-bold text-center block w-full" style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 32px; line-height: 1.2;">
                     Create with Purpose. Design with Personality.
                 </span>
+            </div>
+            <div class="flex flex-wrap gap-md mt-xl w-full max-w-2xl">
+                <a href="https://instagram.com/chaezlyn_" target="_blank" rel="noopener" class="bg-surface text-on-surface px-lg py-sm border-2 border-on-surface rounded-full hard-shadow-black rotate-[-2deg] hover:scale-105 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all font-label-sm text-label-sm uppercase font-bold inline-flex items-center gap-xs">
+                    <span class="material-symbols-outlined text-base align-middle">photo_camera</span>
+                    @chaezlyn_
+                </a>
+                <a href="mailto:friscazulianti17@gmail.com" class="bg-primary-fixed text-on-surface px-lg py-sm border-2 border-on-surface rounded-full hard-shadow-black rotate-[2deg] hover:scale-105 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all font-label-sm text-label-sm uppercase font-bold inline-flex items-center gap-xs">
+                    <span class="material-symbols-outlined text-base align-middle">mail</span>
+                    friscazulianti17@gmail.com
+                </a>
             </div>
         </div>
     </div>
@@ -1517,7 +1543,7 @@
                 <div class="absolute -bottom-2 left-0 w-full h-sm bg-secondary-fixed -z-10 rotate-[-2deg]"></div>
             </h3>
             <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mt-lg">
-                Tools I create with every day â€” from vector illustration to motion cuts.
+                Tools I create with every day — from vector illustration to motion cuts.
             </p>
         </div>
         <div class="flex flex-wrap justify-center items-stretch gap-xl">
@@ -1623,7 +1649,7 @@
             </p>
         </header>
 
-        <!-- Filters â€” synced with My Toolbelt (8 categories + ALL) -->
+        <!-- Filters — synced with My Toolbelt (8 categories + ALL) -->
         <div class="flex flex-wrap justify-center gap-sm md:gap-md relative z-10">
             <button data-filter="all" aria-pressed="true" class="bg-secondary-fixed text-on-secondary-fixed border-2 border-on-surface font-label-sm text-label-sm px-md py-sm rounded-full shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-primary hover:text-on-primary hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all duration-200 -rotate-2 filter-btn active-filter">ALL</button>
             <button data-filter="illustration" aria-pressed="false" class="bg-surface text-on-surface border-2 border-on-surface font-label-sm text-label-sm px-md py-sm rounded-full shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-secondary-fixed hover:text-on-secondary-fixed hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all duration-200 -rotate-1 filter-btn">ILLUSTRATION</button>
@@ -1642,10 +1668,13 @@
             <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:-rotate-1" data-category="branding graphic-design">
                 <div class="relative h-64 md:h-80 w-full border-b-2 border-on-surface overflow-hidden bg-surface-variant">
                     <img class="logo-design-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="LOGO DESIGN visual identity portfolio" src="IMAGE/LOGO/ASA SUSHI LOGO-01.jpg">
-                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rotate-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">YUM!</div>
+                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">BRANDING</div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/50">
+                        <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6">VIEW</span>
+                    </div>
                 </div>
                 <div class="p-md flex flex-col gap-sm bg-surface">
-                    <div class="flex justify-between items-start">
+                    <div class="flex justify-between items-start gap-sm">
                         <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">LOGO DESIGN</h3>
                         <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2026</span>
                     </div>
@@ -1654,30 +1683,36 @@
                 </div>
             </article>
 
-            <!-- GRAPHIC STANDARD MANUAL - 2 media slider modal -->
+<!-- GRAPHIC STANDARD MANUAL - 2 media slider modal -->
             <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:rotate-1" data-category="branding graphic-design">
                 <div class="relative h-64 md:h-80 w-full border-b-2 border-on-surface overflow-hidden bg-surface-variant">
                     <img class="gsm-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="GRAPHIC STANDARD MANUAL - cover" src="IMAGE/GSM/gsm-cover.jpg">
-                    <div class="absolute top-md right-md bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">GUIDE!</div>
+                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">GUIDELINE</div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/50">
+                        <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6">VIEW</span>
+                    </div>
                 </div>
                 <div class="p-md flex flex-col gap-sm bg-surface">
                     <div class="flex justify-between items-start gap-sm">
                         <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">GRAPHIC STANDARD MANUAL</h3>
                         <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2026</span>
                     </div>
-                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Branding &amp; Guideline</span>
+                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Branding & Guideline</span>
                     <p class="font-body-sm text-body-sm text-on-surface-variant mt-sm">Logo construction, clear space, color, typography, and application rules in one standard manual.</p>
                 </div>
             </article>
 
             <!-- TYPOGRAPHY - 3 images slider modal -->
             <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:rotate-1" data-category="illustration graphic-design visual-storytelling">
-                <div class="relative h-56 md:h-72 w-full border-b-2 border-on-surface overflow-hidden bg-primary-fixed">
+                <div class="relative h-64 md:h-80 w-full border-b-2 border-on-surface overflow-hidden bg-primary-fixed">
                     <img class="typography-img w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="Typography quotes DKV" src="IMAGE/TYPOGRAPHY/TYPOGRAPHY_QUOTESDKV.jpg">
-                    <div class="absolute top-md right-md bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">COOL!</div>
+                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">TYPOGRAPHY</div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/50">
+                        <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6">VIEW</span>
+                    </div>
                 </div>
                 <div class="p-md flex flex-col gap-sm bg-surface">
-                    <div class="flex justify-between items-start">
+                    <div class="flex justify-between items-start gap-sm">
                         <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">TYPOGRAPHY</h3>
                         <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2025</span>
                     </div>
@@ -1686,52 +1721,55 @@
                 </div>
             </article>
 
-            <!-- BLACK BROADCAST -->
+<!-- BLACK BROADCAST -->
             <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:-rotate-2" data-category="video-editing visual-storytelling branding photography">
                 <div class="relative h-72 md:h-96 w-full border-b-2 border-on-surface overflow-hidden bg-inverse-surface">
                     <img class="bbc-img w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="BLACK BROADCAST - 11th Anniv" src="IMAGE/BBC/11th%20Anniv%20Black%20Broadcast%20.jpeg">
-                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rotate-12">9 MEDIA</div>
+                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">9 MEDIA</div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/50">
                         <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6">VIEW</span>
                     </div>
                 </div>
                 <div class="p-md flex flex-col gap-sm bg-surface">
                     <div class="flex justify-between items-start gap-sm">
-                        <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">BLACK BROADCAST ORGANIZATION &amp; FILM PRODUCTION</h3>
+                        <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">BLACK BROADCAST ORGANIZATION & FILM PRODUCTION</h3>
                         <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2025</span>
                     </div>
-                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Identity &amp; Visual Content</span>
+                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Identity & Visual Content</span>
                     <p class="font-body-sm text-body-sm text-on-surface-variant mt-sm">Bold visual identity for a student broadcasting organization.</p>
                 </div>
             </article>
 
-            <!-- DIGITAL ILUSTRATION -->
+<!-- DIGITAL ILUSTRATION -->
             <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:rotate-1" data-category="illustration visual-storytelling social-media">
-                <div class="relative h-56 md:h-72 w-full border-b-2 border-on-surface overflow-hidden bg-tertiary-fixed">
+                <div class="relative h-64 md:h-80 w-full border-b-2 border-on-surface overflow-hidden bg-tertiary-fixed">
                     <img class="digital-illustration-img w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="DIGITAL ILUSTRATION - digital artworks collection" src="IMAGE/2.png">
-                    <div class="absolute top-md right-md bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">CLICK!</div>
+                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">DIGITAL ART</div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/50">
+                        <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6">VIEW</span>
+                    </div>
                 </div>
                 <div class="p-md flex flex-col gap-sm bg-surface">
-                    <div class="flex justify-between items-start">
+                    <div class="flex justify-between items-start gap-sm">
                         <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">DIGITAL ILUSTRATION</h3>
                         <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2023</span>
                     </div>
-                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Illustration &amp; Visual Storytelling</span>
+                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Illustration & Visual Storytelling</span>
                     <p class="font-body-sm text-body-sm text-on-surface-variant mt-sm">A collection of digital artworks exploring creativity, imagination, and visual expression.</p>
                 </div>
             </article>
 
             <!-- PHOTOGRAPHY -->
             <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:-rotate-1" data-category="photography visual-storytelling">
-                <div class="relative h-56 md:h-72 w-full border-b-2 border-on-surface overflow-hidden bg-surface-container-high">
+                <div class="relative h-64 md:h-80 w-full border-b-2 border-on-surface overflow-hidden bg-surface-container-high">
                     <img class="photography-img w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="Photography portfolio" src="IMAGE/PHOTOGRAPHY/CITY%20LIGHT%20.jpg">
-                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rotate-3">6 PHOTOS</div>
+                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">6 PHOTOS</div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/50">
                         <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6">VIEW</span>
                     </div>
                 </div>
                 <div class="p-md flex flex-col gap-sm bg-surface">
-                    <div class="flex justify-between items-start">
+                    <div class="flex justify-between items-start gap-sm">
                         <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">PHOTOGRAPHY</h3>
                         <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2022</span>
                     </div>
@@ -1740,34 +1778,37 @@
                 </div>
             </article>
 
-            <!-- PERSONAL POSTER SERIES -->
+<!-- PERSONAL POSTER SERIES -->
             <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:rotate-1" data-category="branding illustration graphic-design visual-storytelling">
-                <div class="relative h-80 md:h-[400px] w-full border-b-2 border-on-surface overflow-hidden bg-surface-dim">
+                <div class="relative h-72 md:h-96 w-full border-b-2 border-on-surface overflow-hidden bg-surface-dim">
                     <img class="poster-series-img w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="Poster Series - Olattte product photo" src="IMAGE/POSTER SERIES/POSTER FOTO PRODUK_OLATTE.jpg">
-                    <div class="absolute top-md right-md bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">CLICK!</div>
-                </div>
-                <div class="p-md flex flex-col gap-sm bg-surface">
-                    <div class="flex justify-between items-start">
-                        <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">POSTER SERIES</h3>
-                        <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2025 - 2026</span>
-                    </div>
-                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Design &amp; Collage</span>
-                    <p class="font-body-sm text-body-sm text-on-surface-variant mt-sm">Poster experiments combining typography, illustration, and collage.</p>
-                </div>
-            </article>
-
-<!-- EDITOR VIDEO & FILM - 1 kartu, 2 foto slider modal -->
-            <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:-rotate-1" data-category="video-editing">
-                <div class="relative h-56 md:h-72 w-full border-b-2 border-on-surface overflow-hidden">
-                    <img src="IMAGE/EDITING%20VIDIO/Screenshot%202026-09-09%20124115.png" alt="Editor Video &amp; Film - Editing" class="film-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rotate-3">2 PHOTOS</div>
+                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">POSTER</div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/50">
                         <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6">VIEW</span>
                     </div>
                 </div>
                 <div class="p-md flex flex-col gap-sm bg-surface">
-                    <div class="flex justify-between items-start">
-                        <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">Editor Video &amp; Film</h3>
+                    <div class="flex justify-between items-start gap-sm">
+                        <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">POSTER SERIES</h3>
+                        <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2025 - 2026</span>
+                    </div>
+                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Design & Collage</span>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant mt-sm">Poster experiments combining typography, illustration, and collage.</p>
+                </div>
+            </article>
+
+<!-- EDITOR VIDEO & FILM - 1 kartu, 2 screenshot + 2 video slider modal -->
+            <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:-rotate-1" data-category="video-editing">
+                <div class="relative h-64 md:h-80 w-full border-b-2 border-on-surface overflow-hidden bg-inverse-surface">
+                    <img class="film-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Editor Video & Film - 2 screenshot + 2 video" src="IMAGE/EDITING%20VIDIO/Screenshot%202026-09-09%20124115.png">
+                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">7 MEDIA</div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/50">
+                        <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6">VIEW</span>
+                    </div>
+                </div>
+                <div class="p-md flex flex-col gap-sm bg-surface">
+                    <div class="flex justify-between items-start gap-sm">
+                        <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">EDITOR VIDEO & FILM</h3>
                         <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2026</span>
                     </div>
                     <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Video & Film</span>
@@ -1775,45 +1816,64 @@
                 </div>
             </article>
 
-<!-- MODUL - 1 kartu, 4 PDF slider modal -->
+<!-- MODUL - 1 kartu, 3 PDF slider modal -->
             <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:rotate-1" data-category="branding graphic-design modul">
                 <div class="relative h-64 md:h-80 w-full border-b-2 border-on-surface overflow-hidden bg-secondary-fixed">
                     <img class="modul-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="MODUL - Modul pembelajaran desain visual" src="IMAGE/MODUL/COVER%20MODUL.png">
-                    <div class="absolute top-md right-md bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">3 PDF</div>
+                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">3 PDF</div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/50">
                         <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6">VIEW</span>
                     </div>
                 </div>
                 <div class="p-md flex flex-col gap-sm bg-surface">
-                    <div class="flex justify-between items-start">
+                    <div class="flex justify-between items-start gap-sm">
                         <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">MODUL</h3>
                         <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2026</span>
                     </div>
-                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Branding &amp; Education</span>
+                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Branding & Education</span>
                     <p class="font-body-sm text-body-sm text-on-surface-variant mt-sm">Kumpulan 3 modul pembelajaran desain visual untuk mahasiswa DKV.</p>
                 </div>
             </article>
 
-            <!-- CHARACTER 2D & 3D - 1 kartu, 5 gambar slider modal -->
+<!-- CHARACTER 2D & 3D - 1 kartu, 5 gambar slider modal -->
             <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:-rotate-2" data-category="illustration visual-storytelling">
                 <div class="relative h-64 md:h-80 w-full border-b-2 border-on-surface overflow-hidden bg-tertiary-fixed">
                     <img class="character-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="CHARACTER 2D & 3D - character design collection" src="IMAGE/Karakter%202D%20%26%203D/karakter%20.png">
-                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rotate-3">5 PHOTOS</div>
+                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">5 PHOTOS</div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/50">
                         <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6">VIEW</span>
                     </div>
                 </div>
                 <div class="p-md flex flex-col gap-sm bg-surface">
-                    <div class="flex justify-between items-start">
-                        <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">CHARACTER 2D &amp; 3D</h3>
+                    <div class="flex justify-between items-start gap-sm">
+                        <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">CHARACTER 2D & 3D</h3>
                         <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2026</span>
                     </div>
-                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Illustration &amp; 3D</span>
+                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Illustration & 3D</span>
                     <p class="font-body-sm text-body-sm text-on-surface-variant mt-sm">Original character designs in 2D and 3D, from playful mascots to low-poly figures.</p>
                 </div>
             </article>
+
+            <!-- MANUAL SKETCHING - 1 kartu, slider 5 gambar lightbox -->
+            <article class="masonry-item group relative bg-surface border-2 border-on-surface rounded-lg overflow-hidden shadow-[8px_8px_0px_0px_rgba(174,0,131,1)] hover:shadow-[12px_12px_0px_0px_rgba(243,231,0,1)] transition-all duration-300 hover:scale-[1.02] hover:rotate-1" data-category="illustration graphic-design">
+                <div class="relative h-64 md:h-80 w-full border-b-2 border-on-surface overflow-hidden bg-tertiary-fixed">
+                    <img class="sketch-img w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" alt="MANUAL SKETCHING - sketsa manual" src="IMAGE/MANUAL%20SKETCHING.png">
+                    <div class="absolute top-md right-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">5 IMAGES</div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/50">
+                        <span class="bg-primary text-on-primary font-label-sm text-label-sm px-sm py-xs rounded-full border border-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-6">VIEW</span>
+                    </div>
+                </div>
+                <div class="p-md flex flex-col gap-sm bg-surface">
+                    <div class="flex justify-between items-start gap-sm">
+                        <h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">MANUAL SKETCHING</h3>
+                        <span class="bg-tertiary-fixed-dim text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2 py-1 rounded-full border border-on-surface">2020-2026</span>
+                    </div>
+                    <span class="font-label-sm text-label-sm text-primary uppercase border-b border-primary w-fit pb-1">Illustration & Education</span>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant mt-sm">A collection of hand-drawn sketches exploring form, line, and visual expression.</p>
+                </div>
+            </article>
         </div>
-        <p id="works-no-results" class="hidden text-center font-body-md text-body-md text-on-surface-variant border-2 border-dashed border-border-accent p-lg rounded-lg bg-surface">No works in this category yet â€” try another filter.</p>
+        <p id="works-no-results" class="hidden text-center font-body-md text-body-md text-on-surface-variant border-2 border-dashed border-border-accent p-lg rounded-lg bg-surface">No works in this category yet — try another filter.</p>
     </div>
 </section>
 
@@ -1857,7 +1917,7 @@
                     </div>
                     <div class="mt-md">
                         <h3 class="font-headline-md text-headline-md text-primary mb-sm text-xl">Direct</h3>
-                        <a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors underline decoration-2 decoration-secondary-fixed underline-offset-4" href="mailto:hello@frisca.com">hello@frisca.com</a>
+                        <a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors underline decoration-2 decoration-secondary-fixed underline-offset-4" href="mailto:friscazulianti17@gmail.com">friscazulianti17@gmail.com</a>
                     </div>
                     <div class="mt-lg pt-lg border-t border-dashed border-border-accent">
                         <p class="font-headline-md text-headline-md text-tertiary-container text-lg transform -rotate-2 italic">
@@ -1943,7 +2003,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateProgress();
     if (backToTop) backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
-    // ===== Retro Scroll Reveal — replay selalu selama di web =====
+    // ===== Retro Scroll Reveal � replay selalu selama di web =====
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -1955,7 +2015,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, { threshold: 0.14, rootMargin: "0px 0px -40px 0px" });
 
-    // helper to mark + observe (safe â€” tidak crash kalau selector salah)
+    // helper to mark + observe (safe — tidak crash kalau selector salah)
     const markReveal = (sel, cls, baseDelay, step) => {
         try {
             const els = document.querySelectorAll(sel);
@@ -1986,7 +2046,7 @@ document.addEventListener("DOMContentLoaded", () => {
     markReveal("#about h3", "reveal", 0.14, 0);
     markReveal("#about .bg-surface-variant p", "reveal", 0.18, 0);
     markReveal("#about .bg-secondary-fixed.rotate-\\[2deg\\]", "reveal-pop", 0.22, 0);
-    // Toolbelt stagger â€” biar pop satu-satu keren
+    // Toolbelt stagger — biar pop satu-satu keren
     const toolbeltItems = document.querySelectorAll(".toolbelt-btn");
     toolbeltItems.forEach((el, i) => {
         el.classList.add("reveal-pop");
@@ -2007,7 +2067,7 @@ document.addEventListener("DOMContentLoaded", () => {
         el.style.setProperty("--d", (0.03 + i * 0.05).toFixed(2) + "s");
         revealObserver.observe(el);
     });
-    // Masonry cards â€” retro pop with cascade
+    // Masonry cards — retro pop with cascade
     document.querySelectorAll("#works .masonry-item").forEach((el, i) => {
         el.classList.add("reveal-pop");
         el.style.setProperty("--d", (0.04 + (i % 3) * 0.08 + Math.floor(i/3)*0.04).toFixed(2) + "s");
@@ -2027,7 +2087,7 @@ document.addEventListener("DOMContentLoaded", () => {
             revealObserver.observe(sec);
         }
     });
-// Parallax slow — hanya .parallax-slow agar tidak merusak reveal replay
+// Parallax slow � hanya .parallax-slow agar tidak merusak reveal replay
     const parallaxEls = document.querySelectorAll(".parallax-slow");
     let ticking = false;
     window.addEventListener("scroll", () => {
@@ -2457,6 +2517,81 @@ document.addEventListener("DOMContentLoaded", () => {
         }, { passive: true });
     }
 
+    // --- MANUAL SKETCHING Modal Lightbox with Slider 5 gambar (SKETSA MANUAL) ---
+    const sketchModal = document.getElementById("sketch-modal");
+    const sketchImg = document.querySelector(".sketch-img");
+    const sketchClose = document.getElementById("sketch-modal-close");
+    const sketchPrev = document.getElementById("sketch-prev");
+    const sketchNext = document.getElementById("sketch-next");
+    const sketchSlides = sketchModal ? sketchModal.querySelectorAll(".digital-slide") : [];
+    const sketchDots = sketchModal ? sketchModal.querySelectorAll(".modal-dot") : [];
+    let sketchCurrent = 0;
+
+    const showSketchSlide = (index) => {
+        if (!sketchSlides.length) return;
+        sketchCurrent = (index + sketchSlides.length) % sketchSlides.length;
+        sketchSlides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === sketchCurrent);
+        });
+        sketchDots.forEach((dot, i) => {
+            const isActive = i === sketchCurrent;
+            dot.classList.toggle("active", isActive);
+            dot.setAttribute("aria-selected", isActive ? "true" : "false");
+        });
+    };
+
+    if (sketchModal && sketchImg && sketchClose) {
+        const openSketchModal = () => {
+            showSketchSlide(0);
+            sketchModal.classList.add("open");
+            document.body.style.overflow = "hidden";
+        };
+        const closeSketchModal = () => {
+            sketchModal.classList.remove("open");
+            const isDigitalOpen = document.getElementById("digital-illustration-modal")?.classList.contains("open");
+            const isPosterOpen = document.getElementById("poster-series-modal")?.classList.contains("open");
+            const isBbcOpen = document.getElementById("bbc-modal")?.classList.contains("open");
+            const isGsmOpen = document.getElementById("gsm-modal")?.classList.contains("open");
+            const isWorksOpen = document.getElementById("works-lightbox-modal")?.classList.contains("open");
+            const isModulOpen = document.getElementById("modul-modal")?.classList.contains("open");
+            const isCharacterOpen = document.getElementById("character-modal")?.classList.contains("open");
+            const isFilmOpen = document.getElementById("film-modal")?.classList.contains("open");
+            if (!isDigitalOpen && !isPosterOpen && !isBbcOpen && !isGsmOpen && !isWorksOpen && !isModulOpen && !isCharacterOpen && !isFilmOpen) {
+                document.body.style.overflow = "";
+            }
+        };
+
+        sketchImg.addEventListener("click", openSketchModal);
+        sketchClose.addEventListener("click", closeSketchModal);
+        sketchModal.addEventListener("click", (e) => {
+            if (e.target === sketchModal) closeSketchModal();
+        });
+        if (sketchPrev) sketchPrev.addEventListener("click", (e) => { e.stopPropagation(); showSketchSlide(sketchCurrent - 1); });
+        if (sketchNext) sketchNext.addEventListener("click", (e) => { e.stopPropagation(); showSketchSlide(sketchCurrent + 1); });
+        sketchDots.forEach((dot, i) => {
+            dot.addEventListener("click", (e) => { e.stopPropagation(); showSketchSlide(i); });
+        });
+
+        // Keyboard navigation when modal open
+        document.addEventListener("keydown", (e) => {
+            if (!sketchModal.classList.contains("open")) return;
+            if (e.key === "Escape") closeSketchModal();
+            if (e.key === "ArrowLeft") showSketchSlide(sketchCurrent - 1);
+            if (e.key === "ArrowRight") showSketchSlide(sketchCurrent + 1);
+        });
+
+        // Touch swipe support
+        let skX = 0;
+        sketchModal.addEventListener("touchstart", (e) => { skX = e.changedTouches[0].screenX; }, { passive: true });
+        sketchModal.addEventListener("touchend", (e) => {
+            const dx = e.changedTouches[0].screenX - skX;
+            if (Math.abs(dx) > 50) {
+                if (dx < 0) showSketchSlide(sketchCurrent + 1);
+                else showSketchSlide(sketchCurrent - 1);
+            }
+        }, { passive: true });
+    }
+
     // --- POSTER SERIES Modal Lightbox with Slider 4 gambar (hanya gambar, centered) ---
     const posterModal = document.getElementById("poster-series-modal");
     const posterImg = document.querySelector(".poster-series-img");
@@ -2532,7 +2667,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, { passive: true });
     }
 
-    // --- EDITOR VIDEO & FILM Modal Lightbox with Slider 2 gambar ---
+    // --- EDITOR VIDEO & FILM Modal Lightbox with Slider 7 media (2 gambar + 5 video) ---
     const filmModal = document.getElementById("film-modal");
     const filmImg = document.querySelector(".film-img");
     const filmClose = document.getElementById("film-modal-close");
@@ -2545,7 +2680,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const showFilmSlide = (index) => {
         if (!filmSlides.length) return;
         filmCurrent = (index + filmSlides.length) % filmSlides.length;
-        filmSlides.forEach((s, i) => s.classList.toggle("active", i === filmCurrent));
+        filmSlides.forEach((s, i) => {
+            const active = i === filmCurrent;
+            s.classList.toggle("active", active);
+            const v = s.querySelector("video");
+            if (v && !active) v.pause();
+        });
         filmDots.forEach((d, i) => {
             const a = i === filmCurrent;
             d.classList.toggle("active", a);
@@ -2561,6 +2701,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         const closeFilmModal = () => {
             filmModal.classList.remove("open");
+            filmModal.querySelectorAll("video").forEach((v) => v.pause());
             const isBbcOpen = document.getElementById("bbc-modal")?.classList.contains("open");
             const isGsmOpen = document.getElementById("gsm-modal")?.classList.contains("open");
             const isModulOpen = document.getElementById("modul-modal")?.classList.contains("open");
@@ -3007,7 +3148,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!card.querySelector(".skill-hint")) {
                 const hint = document.createElement("span");
                 hint.className = "skill-hint";
-                hint.textContent = "klik logo ✦";
+                hint.textContent = "klik logo ?";
                 badge.parentElement.appendChild(hint);
             }
         }
@@ -3168,6 +3309,43 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 </div>
 
+<!-- MANUAL SKETCHING Modal - Slider 5 gambar (SKETSA MANUAL) -->
+<div id="sketch-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Manual Sketching gallery">
+    <div class="modal-content digital-modal-slider">
+        <button id="sketch-modal-close" class="modal-close" aria-label="Close modal">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">close</span>
+        </button>
+        <button id="sketch-prev" class="modal-nav modal-prev" aria-label="Previous image">
+            <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+        <button id="sketch-next" class="modal-nav modal-next" aria-label="Next image">
+            <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+        <div class="digital-slide active">
+            <img class="modal-image" src="IMAGE/SKETSA%20MANUAL/CamScanner%2015-10-2026%2018.33_1.jpg" alt="Manual Sketching - Sketsa 1">
+        </div>
+        <div class="digital-slide">
+            <img class="modal-image" src="IMAGE/SKETSA%20MANUAL/CamScanner%2015-10-2026%2018.33_2.jpg" alt="Manual Sketching - Sketsa 2">
+        </div>
+        <div class="digital-slide">
+            <img class="modal-image" src="IMAGE/SKETSA%20MANUAL/CamScanner%2015-10-2026%2018.33_3.jpg" alt="Manual Sketching - Sketsa 3">
+        </div>
+        <div class="digital-slide">
+            <img class="modal-image" src="IMAGE/SKETSA%20MANUAL/CamScanner%2015-10-2026%2018.33_4.jpg" alt="Manual Sketching - Sketsa 4">
+        </div>
+        <div class="digital-slide">
+            <img class="modal-image" src="IMAGE/SKETSA%20MANUAL/CamScanner%2015-10-2026%2018.33_5.jpg" alt="Manual Sketching - Sketsa 5">
+        </div>
+        <div class="modal-dots" role="tablist" aria-label="Image navigation">
+            <button class="modal-dot active" data-slide="0" aria-label="Go to image 1" role="tab" aria-selected="true"></button>
+            <button class="modal-dot" data-slide="1" aria-label="Go to image 2" role="tab" aria-selected="false"></button>
+            <button class="modal-dot" data-slide="2" aria-label="Go to image 3" role="tab" aria-selected="false"></button>
+            <button class="modal-dot" data-slide="3" aria-label="Go to image 4" role="tab" aria-selected="false"></button>
+            <button class="modal-dot" data-slide="4" aria-label="Go to image 5" role="tab" aria-selected="false"></button>
+        </div>
+    </div>
+</div>
+
 <!-- POSTER SERIES Modal - Slider 4 gambar (hanya gambar) -->
 <div id="poster-series-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Poster Series gallery">
     <div class="modal-content digital-modal-slider">
@@ -3248,7 +3426,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 </div>
 
-<!-- EDITOR VIDEO & FILM Modal - Slider 2 gambar -->
+<!-- EDITOR VIDEO & FILM Modal - Slider 7 media (2 gambar + 5 video) -->
 <div id="film-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Editor Video &amp; Film gallery">
     <div class="modal-content digital-modal-slider">
         <button id="film-modal-close" class="modal-close" aria-label="Close modal">
@@ -3263,12 +3441,40 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="film-slide active">
             <img class="modal-image" src="IMAGE/EDITING%20VIDIO/Screenshot%202026-09-09%20124115.png" alt="Editor Video &amp; Film - Editing 1">
         </div>
+<div class="film-slide">
+            <img class="modal-image" src="IMAGE/PORTOFOLIO FRISCA.png" alt="Editor Video & Film - Portfolio Frisca">
+        </div>
         <div class="film-slide">
-            <img class="modal-image" src="IMAGE/EDITING%20VIDIO/Screenshot%202026-09-09%20124145.png" alt="Editor Video &amp; Film - Editing 2">
+            <video class="modal-image" controls preload="metadata" src="IMAGE/KONTEN%20SAS%20UPRAK%20REVISI%20.mp4"></video>
+            <div class="film-caption">Content Creator Day in KBS</div>
+        </div>
+        <div class="film-slide">
+            <video class="modal-image" controls preload="metadata" src="IMAGE/KONTEN%20PROMOSI%20GANCI.mp4"></video>
+            <div class="film-caption">Content Creator Product Promotion</div>
+        </div>
+        <div class="film-slide">
+            <video class="modal-image" controls preload="metadata" src="IMAGE/konten%20tiktok.mp4"></video>
+            <div class="film-caption">Content Creator TikTok</div>
+        </div>
+        <div class="film-slide">
+            <video class="modal-image" controls preload="metadata" src="IMAGE/IKLAN%20VIDIO%20FRISORA.mp4"></video>
+            <div class="film-caption">Frisora Advertisement Video</div>
+        </div>
+        <div class="film-slide">
+            <video class="modal-image" controls preload="metadata" src="IMAGE/02%20FRISORA%20DOU%20AURA%20SET.mp4"></video>
+            <div class="film-caption">Frisora Dou Aura Set</div>
         </div>
         <div class="modal-dots" role="tablist" aria-label="Image navigation">
             <button class="modal-dot active" data-slide="0" aria-label="Go to image 1" role="tab" aria-selected="true"></button>
             <button class="modal-dot" data-slide="1" aria-label="Go to image 2" role="tab" aria-selected="false"></button>
+            <button class="modal-dot" data-slide="2" aria-label="Go to image 3" role="tab" aria-selected="false"></button>
+            <button class="modal-dot" data-slide="3" aria-label="Go to image 4" role="tab" aria-selected="false"></button>
+            <button class="modal-dot" data-slide="4" aria-label="Go to image 5" role="tab" aria-selected="false"></button>
+            <button class="modal-dot" data-slide="5" aria-label="Go to image 6" role="tab" aria-selected="false"></button>
+            <button class="modal-dot" data-slide="6" aria-label="Go to image 7" role="tab" aria-selected="false"></button>
+        </div>
+        <div class="flex flex-wrap gap-sm justify-center" style="margin-top:16px">
+            <a href="https://drive.google.com/drive/folders/1twqInV7l0B_pmItdd3hbX2jpJ5-10kCR?usp=drive_link" target="_blank" rel="noopener" class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-md py-sm rounded-full border-2 border-white font-bold uppercase tracking-wide hover:scale-105 transition-transform">LIHAT DI GOOGLE DRIVE</a>
         </div>
     </div>
 </div>
@@ -3427,3 +3633,8 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 </body>
 </html>
+
+
+
+
+
